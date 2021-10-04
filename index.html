@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Här kan du skriva vilka filmer du har sett</h3>
+        <!-- title ------------------------------------>
+        <div class="title-wrapper">
+            <label for="title">Titel : </label>
+            <input type="text" name="title" id="title" >
+        </div>
+
+        <br>
+        <!-- genre ------------------------------------>
+        <div class="genre-wrapper">
+            <label for="genre">Genre : </label>
+            <input type="text" name="genre" id="genre" >
+        </div>
+
+        <br>
+        <!-- year ------------------------------------>
+        <div class="year-wrapper">
+            <label for="year">Year : </label>
+            <input type="number" name="year" id="year" >
+        </div>
+
+        <br>
+        <!-- recension ------------------------------------>
+        <div class="recension-wrapper">
+        <p>Recension :</p>
+            <div>
+                <input type="radio" id="recension1" name="recension" value="1" checked>
+                <label for="recension1">1</label>
+            </div>
+            <div>
+                <input type="radio" id="recension2" name="recension" value="2" >
+                <label for="recension2">2</label>
+            </div>
+            <div>
+                <input type="radio" id="recension3" name="recension" value="3" >
+                <label for="recension3">3</label>
+            </div>
+            <div>
+                <input type="radio" id="recension4" name="recension" value="4" >
+                <label for="recension4">4</label>
+            </div>
+            <div>
+                <input type="radio" id="recension5" name="recension" value="5" >
+                <label for="recension5">5</label>
+            </div>
+        </div>
+
+        <br>
+        <!-- button ------------------------------------>
+        <button id="button">Skicka</button>
+
+        <br>
+        <br>
+
+        <!-- table ------------------------------------>
+        <table id="myTable">
+            <tr>
+                <th>Titel</th>
+                <th>Genre</th>
+                <th>Year</th>
+                <th>Recension</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
